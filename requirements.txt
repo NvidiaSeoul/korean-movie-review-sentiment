@@ -1,0 +1,9 @@
+# Korean Movie Review Sentiment Analysis — dependencies
+# NOTE: konlpy(Okt)는 Java(JVM)에 의존합니다. JDK 설치 및 JAVA_HOME 설정이 선행되어야 합니다.
+
+numpy
+pandas
+tensorflow>=2.10        # tensorflow.keras (Tokenizer, pad_sequences, Embedding, LSTM 등)
+konlpy                  # Okt 한국어 형태소 분석기 (JDK 필요)
+JPype1                  # konlpy가 JVM 연동에 사용 (Windows 등에서 명시 설치 권장)
+tqdm                    # 형태소 분석 진행률 표시
